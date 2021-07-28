@@ -31,18 +31,22 @@ async function key(charactor: string, element: HTMLElement) {
 }
 
 async function main() {
-    var title = "++++Quality+++++--+---+-6++++ Tech+nolog++ies+++^";
-    var sub = "contacr++-+t+@++q6tech.com+";
+    const title = "++++Quality+++++--+---+-6++++ Tech+nolog++ies+++^";
+    const subTitle = "Quality is in the name^";
+    const contact = "contacr++-+t+@++q6tech.com+";
 
-    var mainTitleElement = document.getElementById("maintitle");
-    var subTitleElement = document.getElementById("subtitle");
+    var mainTitleElement = document.getElementById("main-title");
+    var subTitleElement = document.getElementById("sub-title");
+    var contactElement = document.getElementById("contact");
 
     mainTitleElement.textContent = "";
     subTitleElement.textContent = "";
+    contactElement.textContent = "";
     document.body.className = "";
 
     await type(mainTitleElement, title);
-    await type(subTitleElement, sub);
+    await type(subTitleElement, subTitle);
+    await type(contactElement, contact);
 };
 
 main();
